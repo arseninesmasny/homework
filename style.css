@@ -1,169 +1,295 @@
+@import url(fonts/fonts.css);
+
+:root {
+  --width-first-img: 372px;
+  --height-first-img: 465px;
+  /* незнаю навіщо вони мені тут алехай вже буде */
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.allhead {
+  max-width: 752px;
+  width: 100%;
+  max-height: 465px;
+  height: 100%;
+}
+main {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.positionrel {
+  position: relative;
+  max-width: 380px;
+  /* не 390 бо треба ставити br тоді */
+  left: 70px;
+  z-index: 3;
+}
+.headtext {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+
+  line-height: 1.2;
+  margin-top: 60px;
+  margin-bottom: 32px;
+}
+.textname {
+  font-size: 20px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.proffesion {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.btn-firstimg {
+  position: relative;
+  max-width: var(--width-first-img);
+  max-height: var(--height-first-img);
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+}
+#headimage {
+  max-width: var(--width-first-img);
+  max-height: var(--height-first-img);
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  object-fit: cover;
+}
+#playbtn {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 5;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.section1 {
+  max-width: 602px;
+  max-height: 358px;
+  width: 100%;
+  gap: 30px;
+  margin-left: 30px;
+}
+.forsecimgs1,
+.forsecimgs2 {
+  max-width: 286px;
+  max-height: 358px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#secondmanimg {
+  max-width: 286px;
+  max-height: 358px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#thirdmanimg {
+  max-width: 286px;
+  max-height: 358px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.backarrow1 {
+  max-width: 112px;
+  max-height: 112px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+  right: 0;
+  background-color: white;
+  cursor: pointer;
+}
+.backarrow2 {
+  max-width: 112px;
+  max-height: 112px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+  left: 0;
+  background-color: white;
+  cursor: pointer;
+}
+.backarrow3 {
+  max-width: 112px;
+  max-height: 112px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+
+  background-color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#arrow1,
+#arrow2,
+#arrow3 {
+  width: 32px;
+  height: 20px;
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+  .positionrel {
+    max-width: 280px;
+    left: 60px;
   }
-  html {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+  .headtext {
+    font-size: 24px;
+    margin-bottom: 24px;
+    margin-top: 48px;
   }
-  body {
-    margin-left: auto;
-    margin-right: auto;
+  .textname {
+    font-size: 18px;
+    margin-bottom: 0px;
   }
-  .marginauto {
-    margin-left: auto;
-    margin-right: auto;
+  .proffesion {
+    font-size: 12px;
   }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1110px;
-    padding-left: 15px;
+  .btn-firstimg {
+    max-width: calc(var(--width-first-img) - 99px);
+    max-height: calc(var(--height-first-img) - 99px);
   }
-  header {
-    background-color: #f9f7e8;
-    width: 100%;
-  
-    padding-top: 25px;
-    padding-bottom: 25px;
+  #headimage {
+    max-width: calc(var(--width-first-img) - 99px);
+    max-height: calc(var(--height-first-img) - 99px);
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
   }
-  header div {
+  .forsecimgs2 {
+    display: none;
+  }
+  .backarrow1 {
+    left: 16px;
+  }
+  .backarrow3 {
     display: flex;
-  }
-  header a {
-    margin-left: 20px;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #000000;
-  }
-  header span {
-    color: #62bfad;
-  }
-  .firstp {
-    margin-left: 80px;
-  }
-  .flexdis {
-    display: flex;
-    flex-direction: row;
+    right: 16px;
   }
   .section1 {
-    font-family: "Limelight", sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: uppercase;
+    max-width: 208px;
+    max-height: 260px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .sectionred {
-    background-color: #925f52;
-    text-align: center;
-    padding-top: 185px;
-    padding-bottom: 185px;
+  .forsecimgs1 {
+    max-width: 208px;
+    max-height: 260px;
   }
-  .red1 {
-    color: #000000;
-    padding-top: 95px;
-    padding-bottom: 40px;
-    font-size: 48px;
+  #secondmanimg {
+    max-width: 208px;
+    max-height: 260px;
   }
-  .backgraywhite {
-    background-color: #c5a6df;
-    padding-bottom: 80px;
+  .backarrow1,
+  .backarrow3 {
+    bottom: -40px;
+    max-width: 80px;
+    max-height: 80px;
   }
-  .insidecon {
-    display: flex;
-    flex-direction: row;
-  
-    background-color: #e5e5e5;
-    border-radius: 5px;
+  #arrow1,
+  #arrow2,
+  #arrow3 {
+    width: 28px;
+    height: 18px;
   }
-  .firimg {
-    max-width: 555px;
-    aspect-ratio: 16/9;
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
   }
-  .textinside {
-    padding: 24px;
-    font-size: 24px;
-  }
-  .label {
-    margin-bottom: 24px;
-    font-size: 32px;
-  }
-  .red2 {
-    color: #000000;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    font-size: 48px;
-  }
-  .cardtitle {
-    columns: 3;
-  }
-  .castleimg {
-    max-width: 275px;
-    aspect-ratio: 16/11;
-  
-    padding-bottom: 24px;
-  }
-  .card1 {
-    padding: 24px;
-    border: solid 2px #e5e5e5;
-    max-width: 325px;
-    border-radius: 5px;
-    margin: 22px;
-  }
-  .card2 {
-    padding: 24px;
-    border: solid 2px #e5e5e5;
-    max-width: 325px;
-    border-radius: 5px;
-  }
-  .card3 {
-    padding: 24px;
-    border: solid 2px #e5e5e5;
-    max-width: 325px;
-    border-radius: 5px;
-    margin: 22px;
-  }
-  .paddingbottom {
-    padding-bottom: 24px;
-  }
-  main a {
-    color: #202cd5 solid;
-    text-decoration: none;
-    border-bottom: 1px #202cd5 solid;
-  }
-  .backwhite {
-    background-color: #ffffff;
-    padding-bottom: 80px;
-  }
-  footer {
-    background-color: #f9f7e8;
-    text-align: center;
-    padding-top: 32px;
-  }
-  .endtext {
-    border-bottom: 1px #000000 solid;
-  }
-  .ending {
-    padding-bottom: 24px;
-  }
-  .endimages {
-    width: 175px;
-    columns: 3;
-    text-wrap: nowrap;
-    text-align: center;
-    padding-bottom: 32px;
+}
+@media (max-width: 769px) and (min-width: 0px) {
+  .allhead {
     position: relative;
+    max-width: 343px;
+    max-height: 428px;
+    width: 100%;
+    height: 100%;
+    margin: 32px 16px 10px 16px;
   }
-  
-  .hovereff {
+  .headtext {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .textname {
+    font-size: 14px;
+  }
+  .proffesion {
+    font-size: 12px;
+  }
+  .positionrel {
     position: absolute;
-    bottom: 20px;
-    left: 35px;
+    max-width: 190px;
+    left: 23px;
+    top: 24px;
+    color: rgb(42, 142, 224);
   }
-  i{
-    margin: 15px;
-    font-size: 20px;
+  .btn-firstimg {
+    max-width: 343px;
+    max-height: 428px;
   }
+  #headimage {
+    max-width: 343px;
+    max-height: 428px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    max-width: 800px;
+  }
+  .section1 {
+    flex-direction: row;
+  }
+  .backarrow1 {
+    right: 0;
+    max-width: 48px;
+    max-height: 48px;
+    bottom: -24px;
+  }
+  .backarrow2 {
+    left: 0;
+    max-width: 48px;
+    max-height: 48px;
+    bottom: -24px;
+  }
+  #arrow1,
+  #arrow2,
+  #arrow3 {
+    width: 24px;
+    height: 15px;
+  }
+  .section1 {
+    margin-left: 0;
+    width: 343px;
+    height: 208px;
+    gap: 10px;
+  }
+}
