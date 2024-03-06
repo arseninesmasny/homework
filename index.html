@@ -3,83 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figma</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Fonts/fonts.css" />
-    <script src="https://kit.fontawesome.com/6da226aa24.js" crossorigin="anonymous"></script>
+    <title>Resume</title>
+    <link rel="stylesheet" href="dist/index.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h2><span>Wisdom</span>Page</h2>
-        <a href="#Home" class="firstp">Home</a>
-        <a href="#About">About</a>
-        <a href="#Features">Features</a>
+    <header class="header">
+      <section class="container-s container">
+        <nav class="navbar">
+          <ul class="navbar-links font500">
+            <li class="navbar-links_null"><a href="#">Homepage</a></li>
+            <li class="navbar-links_first"><a href="#">About author</a></li>
+            <li class="navbar-links_first"><a href="#">Works</a></li>
+            <li class="navbar-links_first media"><a href="#">Process</a></li>
+            <li class="navbar-links_first media2">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="first-screen_text container">
+        <h1 class="first-screen_title font500">Design and layout</h1>
+        <p class="first-screen_par">
+          Lorem Ipsum is fish text often used in print and web design. Lorem
+          Ipsum has been the standard "fish" for Latin texts since the early
+          16th century.
+        </p>
+        <div class="first-screen_button">
+          <div class="first-screen_button__tab">
+            <a href="#" class="button">WRITE ME</a>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="sectionred">
-        <section class="section1">
-            Гамазин
-          </section>
-    </div>
-    <main>
-    <section>
-        <div class="backgraywhite">
-          <div class="fircont container">
-            <h1 class="red1" id="About">About</h1>
-            <div class="insidecon">
-              <div class="textinside">
-                <h2 class="label"><b>Заголовочек</b></h2>
-                <p>
-                  Я продаю турбоишаков.Я буду отвечать вам через неделю или две после вашего заказа потому что мне лень:)
-                </p>
-              </div>
-              <img src="Images/ферма ишаков.jpg" alt="office" class="firimg" />
+    <main class="main">
+      <section class="about-author">
+        <div class="about-author_container">
+          <h2 class="about-author_h2 font500">About me</h2>
+          <p class="about-author_p">
+            About meLorem Ipsum is fish text often used in print and web design.
+            Lorem Ipsum has been the standard "fish" for Latin texts since the
+            early 16th century.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-works">
+        <div class="about-works_container">
+          <div class="about-works_projects one">
+            <img class="page" src="img/project.png" alt="page" />
+            <div class="page-div">
+              <p class="page_text__first">40+</p>
+              <p class="page_text__second">projects</p>
+            </div>
+          </div>
+
+          <div class="about-works_projects two">
+            <img class="page" src="img/project.png" alt="page" />
+            <div class="page-div">
+              <p class="page_text__first">40+</p>
+              <p class="page_text__second">projects</p>
+            </div>
+          </div>
+
+          <div class="about-works_projects three">
+            <img class="page" src="img/project.png" alt="page" />
+            <div class="page-div">
+              <p class="page_text__first">40+</p>
+              <p class="page_text__second">projects</p>
+            </div>
+          </div>
+
+          <div class="about-works_projects four">
+            <img class="page" src="img/project.png" alt="page" />
+            <div class="page-div">
+              <p class="page_text__first">40+</p>
+              <p class="page_text__second">projects</p>
+            </div>
+          </div>
+
+          <div class="about-works_projects five">
+            <img class="page" src="img/project.png" alt="page" />
+            <div class="page-div">
+              <p class="page_text__first">40+</p>
+              <p class="page_text__second">projects</p>
+            </div>
+          </div>
+
+          <div class="about-works_projects six">
+            <img class="page" src="img/project.png" alt="page" />
+            <div class="page-div">
+              <p class="page_text__first">40+</p>
+              <p class="page_text__second">projects</p>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="backwhite">
-          <div class="secont container">
-            <h1 class="red2" id="Features">Features</h1>
-            <div class="cardtitle">
-              <div class="card1">
-                <img src="Images/рижий ишак.jpg" alt="castle" class="castleimg">
-                <p class="paddingbottom">
-                  Рижий турбоишак.Ест два казана плова
-                </p>
-                <a href="#">Read more ></a>
-              </div>
-              <div class="card2">
-                <img src="Images/черный ишак.avif" alt="OSEL" class="castleimg"/>
-                <p class="paddingbottom">
-                  черный турбоишак.Этот нефор ест всё
-                </p>
-                <a href="#">Read more ></a>
-              </div>
-              <div class="card3">
-                <img src="Images/белый ишак1.jpg" alt="OSEL" class="castleimg"/>
-                  белый турбоишак.ест 1 казан плова
-                </p>
-                <br>
-                <br>
-                <br>
-                <a href="#">>Read more</a>
-              </div>
-            </div>
+
+      <div class="third-section">
+        <section class="about-author__second">
+          <div class="about-author_container">
+            <h2 class="about-author_h2 font500">How do I work</h2>
+            <p class="about-author_p">
+              Lorem Ipsum is fish text often used in print and web design. Lorem
+              Ipsum has been the standard "fish" for Latin texts since the early
+              16th century.
+            </p>
           </div>
+        </section>
+        <div class="video-menu container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BpmWTyKt3hk?si=mf3e6kb_yGJADvBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="ending">
-        <p>© 2021 <span class="endtext">Wisdom page</span></p>
       </div>
-      <div class="endimages container">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-twitter"></i>
+    </main>
+    <footer class="footer">
+      <div class="footer_container container">
+        <h3 class="name font500">John Smith</h3>
+        <p class="footer_rights">(c) 2018. All rights reserved.</p>
       </div>
     </footer>
   </body>
