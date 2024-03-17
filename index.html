@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="nav-section container">
+        <div class="nav" id="nav-tab" role="tablist">
+          <button
+            class="nav-link inactivebutton"
+            id="tab-home"
+            data-target="#nav-home"
+            type="button"
+            role="tab"
+          >
+            Home
+          </button>
+          <button
+            class="nav-link inactivebutton"
+            data-target="#nav-profile"
+            type="button"
+            role="tab"
+          >
+            Profile
+          </button>
+          <button
+            class="nav-link inactivebutton"
+            data-target="#nav-contact"
+            type="button"
+            role="tab"
+          >
+            Contact
+          </button>
+          <button
+            class="nav-link inactivebutton"
+            data-target="#nav-delivery"
+            type="button"
+            role="tab"
+          >
+            Delivery
+          </button>
+        </div>
+      </section>
+
+      <section class="second-section container">
+        <div class="tab-content container" id="nav-tabContent">
+          <div class="tab-pane inactivepar" id="nav-home" role="tabpanel">
+            Home tab content
+          </div>
+          <div class="tab-pane inactivepar" id="nav-profile" role="tabpanel">
+            Profile tab content
+          </div>
+          <div class="tab-pane inactivepar" id="nav-contact" role="tabpanel">
+            Contact tab content
+          </div>
+          <div class="tab-pane inactivepar" id="nav-delivery" role="tabpanel">
+            Delivery tab content
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="scripy.js"></script>
+  </body>
+</html>
